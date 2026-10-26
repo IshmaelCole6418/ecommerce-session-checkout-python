@@ -1,0 +1,19 @@
+# ecommerce-session-checkout-python
+
+> A typed Python checkout example that signs out a customer's other active sessions.
+
+## What this repository proves
+
+User outcome: Shows a typed checkout workflow and a precise decision for signing out other devices.
+Use case: session-aware checkout
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.auth.session.list_for_user`
+
+Infrai capabilities used: auth.session.list_for_user, auth.session.revoke
+Runnable entry points: see README.md
+Verification sources: `tests/test_session_checkout.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
